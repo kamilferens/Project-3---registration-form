@@ -1,0 +1,166 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left top, #045de9 0%, #09c6f9 74%);
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 40px;
+    font-size: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-box {
+    margin-bottom: 15px;
+}
+
+.form-box label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+}
+
+.form-box.error input {
+    border: 1px solid rgb(0, 137, 250);
+    background-color: rgb(0, 137, 250, 0.1);
+}
+
+.form-box .error-text {
+    margin: 5px 0 0 10px;
+    font-size: 14px;
+    color: rgb(0, 137, 250);
+    visibility: hidden;
+}
+
+.form-box.error .error-text {
+    visibility: visible;
+}
+
+#wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+    min-height: 300px;
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* padding: 20px; */
+}
+
+#password-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* .password {
+    font-weight: 700;
+} */
+
+#buttons-part {
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+}
+
+/* input { */
+/* width: 100%;
+  margin-bottom: 15px;
+  height: 25px;
+  padding: 0 3px; */
+/* Verdana ; Cel: duże kropki */
+/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+/* } */
+
+.buttons {
+    /* można też osobo wskazać każdy button np. #___, #____, #____*/
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(12, 129, 255);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttons:hover {
+    box-shadow: 0 0 3px black;
+}
+
+.buttons:active {
+    background-color: rgb(12, 20, 255);
+}
+
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+.popup p {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.popup .close {
+    margin-top: 20px;
+}
+
+.show-popup {
+    top: 50%;
+    transition: 0.5s;
+}
+
+.popup-shadow {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(7px);
+    position: absolute;
+    /* transition: 3.5s; */
+}
+
+.popup-container {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* transition: 3.5s; */
+}
